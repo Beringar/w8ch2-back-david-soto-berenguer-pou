@@ -1,29 +1,13 @@
 {
   "name": "w8ch2-back-david-soto-berenguer-pou",
   "version": "1.0.0",
-  "description": "",
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.js",
-      "!src/index.js",
-      "!src/db/index.js",
-      "!src/server/startServer.js",
-      "!src/server/index.js"
-    ],
-    "testEnvironment": "node"
-  },
   "main": "index.js",
   "scripts": {
-    "start": "node src",
-    "start-dev": "nodemon src -q",
-    "test": "jest --runInBand --detectOpenHandles",
-    "test-coverage": "jest --watchAll --coverage",
-    "prepare": "husky install"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Beringar/w8ch2-back-david-soto-berenguer-pou.git"
@@ -47,6 +31,24 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.15",
     "supertest": "^6.2.2"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/*/.js",
+      "!src/index.js",
+      "!src/db/index.js",
+      "!src/server/startServer.js",
+      "!src/server/index.js"
+    ],
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "start": "node src",
+    "start-dev": "nodemon src -q",
+    "test": "jest --runInBand --detectOpenHandles",
+    "test-coverage": "jest --watchAll --coverage",
+    "prepare": "husky install"
+  },
   "devDependencies": {
     "eslint": "^8.10.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -55,3 +57,5 @@
     "husky": "^7.0.0"
   }
 }
+
+
