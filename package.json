@@ -1,12 +1,33 @@
 {
   "name": "w8ch2-back-david-soto-berenguer-pou",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Beringar/w8ch2-back-david-soto-berenguer-pou.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Beringar/w8ch2-back-david-soto-berenguer-pou/issues"
+  },
+  "homepage": "https://github.com/Beringar/w8ch2-back-david-soto-berenguer-pou#readme",
+  "description": "",
+  "dependencies": {
+    "@types/jest": "^27.4.1",
+    "chalk": "^4.1.2",
+    "cors": "^2.8.5",
+    "debug": "^4.3.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "helmet": "^5.0.2",
+    "jest": "^27.5.1",
+    "mongoose": "^6.2.4",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
 }
