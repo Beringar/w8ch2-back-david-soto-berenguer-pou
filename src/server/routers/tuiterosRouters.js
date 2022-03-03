@@ -3,8 +3,8 @@ const { getAllTuits, createTuit } = require("../controllers/tuitsControllers");
 
 const router = express.Router();
 
-router.get("/");
-router.post("/new");
+router.get("/", getAllTuits);
+router.post("/new", createTuit);
 router.delete("/tuitero/:id");
 router.patch("/tuitero/:id");
 
