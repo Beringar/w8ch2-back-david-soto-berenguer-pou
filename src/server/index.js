@@ -5,6 +5,7 @@ const morgan = require("morgan");
 const cors = require("cors");
 const { notFoundError, generalError } = require("./middlewares/errors");
 const tuitsRouters = require("./routers/tuitsRouters");
+const tuiterosRouters = require("./routers/tuiterosRouters");
 
 const app = express();
 
@@ -14,6 +15,7 @@ app.use(express.json());
 app.use(helmet());
 
 app.use("/tuits", tuitsRouters);
+app.use("/tuiteros", tuiterosRouters);
 
 app.use(notFoundError);
 app.use(generalError);
