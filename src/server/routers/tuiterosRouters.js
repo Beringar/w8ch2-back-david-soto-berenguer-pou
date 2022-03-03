@@ -1,11 +1,18 @@
 const express = require("express");
-const { getAllTuits, createTuit } = require("../controllers/tuitsControllers");
+const {
+  listTuiteros,
+  createTuitero,
+  deleteTuitero,
+  updateTuitero,
+  getTuitero,
+} = require("../controllers/tuiterosControllers");
 
 const router = express.Router();
 
-router.get("/", getAllTuits);
-router.post("/new", createTuit);
-router.delete("/tuitero/:id");
-router.patch("/tuitero/:id");
+router.get("/", listTuiteros);
+router.get("/:id", getTuitero);
+router.post("/new", createTuitero);
+router.delete("/tuitero/:id", deleteTuitero);
+router.patch("/tuitero/:id", updateTuitero);
 
 module.exports = router;
