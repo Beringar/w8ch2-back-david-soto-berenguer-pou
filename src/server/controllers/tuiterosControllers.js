@@ -3,6 +3,12 @@ const Tuitero = require("../../db/models/Tuitero");
 const listTuiteros = async (req, res, next) => {
   try {
     const tuiteros = await Tuitero.find();
+    if (!tuiteros) {
+      const error = new Error("No tuiteros found");
+      error.code = 404;
+      next(error);
+      return;
+    }
     res.json({ tuiteros });
   } catch (error) {
     next(error);
